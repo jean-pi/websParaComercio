@@ -1,0 +1,543 @@
+
+
+
+/* ESTAV PAGINA NO IMPLEMENTA NINGUNA ARQUITECTURA CSS, NO ATOMIC DESIGN, ASMACC ECT, 
+FUE A POSTA EL NO LO VIE NESESARIO EN UN PROYECTO TAR CORTO Y BASICO */
+
+
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+/*about me ----------------------------------------------------------------------------*/
+.aboutMeContainer{
+    display: flex;
+    max-width: 100%;
+    min-width: 300px;
+    /* height: 37.5rem; */
+    padding-left: 0px;
+    margin: .6rem .6rem 0 .6rem;
+    justify-content:space-between;
+    align-items: center;
+    gap: 7.25rem;
+    flex-shrink: 0;
+    border: 2px solid var(--taffy, #041514);
+    background-color: var(--ube)
+}
+@media only screen and (max-width: 768px){
+    /* de 1400px para abajo se aplicaran los estilos para dispositivos mas pequeños */
+    .aboutMeContainer{
+        flex-direction: column;
+        gap: 1.50rem;
+    }
+}
+
+
+.aboutMeContainer_textContainer{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    max-width: 915px;
+}
+
+
+.aboutMeContainer_textContainer_h1{
+    margin: 0;
+}
+@media only screen and (max-width: 1024px){
+    /* de 1400px para abajo se aplicaran los estilos para dispositivos mas pequeños */
+    .aboutMeContainer_textContainer_h1{
+        font-size: 2.5rem;
+        margin-bottom: .5rem;
+    }
+}
+.aboutMeContainer_textContainer_p{
+    margin: 0;
+}
+@media only screen and (max-width: 1024px){
+    /* de 1400px para abajo se aplicaran los estilos para dispositivos mas pequeños */
+    .aboutMeContainer_textContainer_p{
+        margin-right: 3rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+
+.aboutMeContainer_divFoto{
+    display: flex;
+    height: 35.5rem;
+    min-width: 35.5rem;
+    /* padding: 25.8125rem 0rem 10.1875rem 38.125rem; */
+    /* flex-direction: column;
+    justify-content: flex-end; */
+    align-items: center;
+    border-left: 2px solid var(--taffy, #041514);
+}
+
+@media only screen and (max-width: 1400px){
+    /* de 1400px para abajo se aplicaran los estilos para dispositivos mas pequeños */
+    .aboutMeContainer_divFoto{
+        height: 25.5rem;
+        min-width: 25.5rem;
+    }
+}
+@media only screen and (max-width: 1024px){
+    /* de 1400px para abajo se aplicaran los estilos para dispositivos mas pequeños */
+    .aboutMeContainer_divFoto{
+        height: 20.5rem;
+        min-width: 20.5rem;
+    }
+}
+@media only screen and (max-width: 768px){
+    /* de 1400px para abajo se aplicaran los estilos para dispositivos mas pequeños */
+    .aboutMeContainer_divFoto{
+        border: none;
+    }
+}
+@media only screen and (max-width: 430px){
+    /* de 1400px para abajo se aplicaran los estilos para dispositivos mas pequeños */
+    .aboutMeContainer_divFoto{
+        border-top: 2px solid var(--taffy, #041514);
+        width: 100%;
+        height: 22.5rem;
+        border: none;
+    }
+}
+
+
+/* links ------------------------------------------------------------------*/
+
+.containerLinks{
+    display: flex;
+    max-width: 100%;
+    min-width: 300px;
+    align-items: flex-start;
+    flex-shrink: 0;
+    margin: 0 .6rem 0 .6rem;
+    border-bottom: 2px solid var(--taffy, #041514);
+    border-left:  2px solid var(--taffy, #041514);
+}
+@media only screen and (max-width: 768px){
+    /* de 1400px para abajo se aplicaran los estilos para dispositivos mas pequeños */
+    .containerLinks{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.containerLinks_contactCard{
+    display: flex;
+    height: 7.5rem;
+    flex: 1;
+    /* padding: 4.625rem 4.3125rem 4.375rem 4.3125rem; */
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-right:  2px solid var(--taffy, #041514);
+}
+@media only screen and (max-width: 768px){
+    /* de 1400px para abajo se aplicaran los estilos para dispositivos mas pequeños */
+    .containerLinks_contactCard{
+        min-height: 5rem;
+        width: 99.7%;
+        border-top: 2px solid var(--taffy, #041514);
+    }
+    .MovilNovaBorderTop{
+        border-top: none;
+    }
+}
+
+.containerLinks_contactCard_a{
+    overflow-wrap: break-word;
+    text-decoration: underline;
+}
+
+
+/* mi experiencia -----------------------------------------------------------*/
+
+.parrafoContainer{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    min-width: 301.9px;
+    padding: 3rem 0 4rem 0;
+    /* height: 37.5rem; */
+    height: auto;
+    padding: 3rem 7rem 3rem 7rem;
+    margin: 0rem .6rem 0 .6rem;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--taffy, #041514);
+    border-top: 0;
+}
+@media only screen and (max-width: 768px){
+    /* de 1400px para abajo se aplicaran los estilos para dispositivos mas pequeños */
+    .parrafoContainer{
+        padding: 2rem;
+    }
+}
+@media only screen and (max-width: 400px){
+    /* de 1400px para abajo se aplicaran los estilos para dispositivos mas pequeños */
+    .parrafoContainer{
+        padding: 2rem 1rem 2rem 1rem;
+    }
+}
+.parrafoContainerLime{
+    background-color: var(--lime)
+}
+.parrafoContainerUbe{
+    background-color: var(--ube);
+}
+
+.parrafoContainer_title{
+    margin: 0;
+    text-align: center;
+}
+@media only screen and (max-width: 768px){
+    /* de 1400px para abajo se aplicaran los estilos para dispositivos mas pequeños */
+    .parrafoContainer_title{
+        font-size: 2rem;
+        margin: 0 0 .5rem 0;
+    }
+}
+
+.parrafoContainer_text{
+    text-align: center;
+    margin: .5rem 0 0rem 0;
+    max-width: 1100px;
+}
+
+/* 
+.parrafoContainer_containerLogos{
+    display: flex;
+    align-items: center;
+}
+
+.parrafoContainer_container_img{
+    width: 11rem;
+    margin: 0 2rem 0 2rem
+    
+/* } 
+
+
+
+/* mis trabajos ----------------------------------------------------- */
+
+.clientes{
+    display: flex;
+    margin: 0 .6rem 0 .6rem;
+}
+@media only screen and (max-width: 710px){
+    /* de 1400px para abajo se aplicaran los estilos para dispositivos mas pequeños */
+    .clientes{
+        flex-direction: column;
+    }
+}
+
+.clienteItem{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 45rem;
+    padding: 0 3rem 0 2rem;
+    height: 37.5rem;
+    align-items: flex-start;
+    flex-shrink: 0;
+    width: 45rem;
+    height: 37.5rem;
+    flex-shrink: 0;
+    border-bottom: 2px solid var(--taffy, #041514);
+    border-left: 2px solid var(--taffy, #041514);
+    position: relative;
+}
+@media only screen and (max-width: 710px){
+    /* de 1400px para abajo se aplicaran los estilos para dispositivos mas pequeños */
+    .clienteItem{
+        width: 100%;
+        padding: 0;
+        border-right:  2px solid  var(--taffy, #041514);
+    }
+}
+
+.clienteItem_borderRight{
+    border-right: 2px solid  var(--taffy, #041514);
+}
+
+
+.clienteItem_textAno{
+    margin: 2rem 0 0 0rem;
+}
+@media screen and (max-width: 710px){
+    /* de 1400px para abajo se aplicaran los estilos para dispositivos mas pequeños */
+    .clienteItem_textAno{
+        margin: 3rem 0 0 1rem ;
+    }
+}
+
+.clienteItem_textNameProyect{
+    margin: 0;
+}
+@media only screen and (max-width: 710px){
+    /* de 1400px para abajo se aplicaran los estilos para dispositivos mas pequeños */
+    .clienteItem_textNameProyect{
+        margin: 0rem 0 0 1rem
+    }
+}
+.clienteItem_textNameProyect_a{
+    color: var(--grape, #E1D7FC);
+}
+@media only screen and (max-width: 710px){
+    /* de 1400px para abajo se aplicaran los estilos para dispositivos mas pequeños */
+    .clienteItem_textNameProyect_a{
+        display: block;
+    }
+}
+
+.clienteItem_imgContainer{
+    border-left: 2px solid var(--taffy, #041514);
+    border-top: 2px solid var(--taffy, #041514);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+@media only screen and (max-width: 1200px){
+    /* de 1400px para abajo se aplicaran los estilos para dispositivos mas pequeños */
+    .clienteItem_imgContainer{
+        border-left: none;
+        border-top: 2px solid var(--taffy, #041514);
+        width: 100%;
+        margin-top: 2rem;
+    }
+}
+@media only screen and (max-width: 710px){
+    /* de 1400px para abajo se aplicaran los estilos para dispositivos mas pequeños */
+    .clienteItem_imgContainer{
+        position: initial;
+    }
+}
+
+.clienteItem_imgContainer_img{
+    width: 35rem;
+}
+@media only screen and (max-width: 1200px){
+    /* de 1400px para abajo se aplicaran los estilos para dispositivos mas pequeños */
+    .clienteItem_imgContainer_img{
+        width: 100%;
+    }
+}
+
+
+/* que incliye y contacto--------------------------------------------------- */
+
+.dosBloquesFinalesContainer{
+    display: flex;
+    margin: 0 .6rem 0 .6rem;
+}
+@media only screen and (max-width: 710px){
+    /* de 1400px para abajo se aplicaran los estilos para dispositivos mas pequeños */
+    .dosBloquesFinalesContainer{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 1150px){
+    /* de 1400px para abajo se aplicaran los estilos para dispositivos mas pequeños */
+    .dosBloquesFinalesContainer{
+        flex-direction: column;
+    }
+}
+
+.dosBloquesFinalesIten{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 45rem;
+    padding: 0 2rem 0 2rem;
+    height: 38.5rem;
+    align-items: flex-start;
+    flex-shrink: 0;
+    width: 45rem;
+    height: 37.5rem;
+    flex-shrink: 0;
+    border-bottom: 2px solid var(--taffy, #041514);
+    border-left: 2px solid var(--taffy, #041514);
+    position: relative;
+}
+@media only screen and (max-width: 710px){
+    /* de 1400px para abajo se aplicaran los estilos para dispositivos mas pequeños */
+    .dosBloquesFinalesIten{
+        padding: 0;
+    }
+}
+@media only screen and (max-width: 1150px){
+    /* de 1400px para abajo se aplicaran los estilos para dispositivos mas pequeños */
+    .dosBloquesFinalesIten{
+        width: 100%;
+        padding: 0 2rem 2rem 2rem;
+        border-right:  2px solid  var(--taffy, #041514);
+    }
+}
+@media only screen and (max-width: 768px){
+    /* de 1400px para abajo se aplicaran los estilos para dispositivos mas pequeños */
+    .dosBloquesFinalesIten{
+        padding: 0 2rem 1rem 1.5rem;
+    }
+}
+@media only screen and (max-width: 460px){
+    /* de 1400px para abajo se aplicaran los estilos para dispositivos mas pequeños */
+    .dosBloquesFinalesIten{
+        padding: 0 2rem 6rem 0.2rem;
+    }
+}
+
+@media only screen and (max-width: 460px){
+    /* de 1400px para abajo se aplicaran los estilos para dispositivos mas pequeños */
+    .quitarMargin460{
+        padding: 0 0rem 6rem 0.2rem;
+    }
+}
+
+
+.dosBloquesFinalesIten_borderRight{
+    border-right: 2px solid  var(--taffy, #041514);
+}
+
+
+.clienteItem_textAño{
+    margin: 4rem 0 0 0;
+}
+@media only screen and (max-width: 710px){
+    
+    .clienteItem_textAño{
+        margin: 3rem 0 0 1rem ;
+    }
+}
+
+.clienteItem_textNameProyect{
+    margin: 0;
+    max-width: 782px;
+}
+@media only screen and (max-width: 710px){
+
+    .clienteItem_textNameProyect{
+        margin: 0rem 0 0 1rem
+    }
+}
+@media only screen and (max-width: 560px){
+
+    .letraMovil{
+        font-size: 1.6rem;
+    }
+    .letraMovilarriba{
+        font-size: 1.2rem;
+    }
+}
+
+
+.queIncluye{
+    position: relative;
+}
+
+.queIncluye_li{
+    margin: .4rem 0 .4rem 0;
+}
+.queIncluye_img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 6.5rem;
+    height: 6.5rem;
+}
+@media only screen and (max-width: 710px){
+    /* de 1400px para abajo se aplicaran los estilos para dispositivos mas pequeños */
+    .queIncluye_img{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+
+/* logos redes contacto --------------------------- */
+
+.logosContainer{
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 4rem;
+}
+@media only screen and (max-width: 1150px){
+    /* de 1400px para abajo se aplicaran los estilos para dispositivos mas pequeños */
+    .logosContainer{
+        margin-top: 1rem;
+    }
+}
+@media only screen and (max-width: 600px){
+    /* de 1400px para abajo se aplicaran los estilos para dispositivos mas pequeños */
+    .logosContainer{
+        margin: 1rem auto auto auto;
+    }
+}
+
+.logosContainerIten{
+    display: flex;
+    align-items: center;
+}
+@media only screen and (max-width: 600px){
+    /* de 1400px para abajo se aplicaran los estilos para dispositivos mas pequeños */
+    .logosContainerIten{
+        flex-direction: column;
+        margin: 1rem 0 2rem 0;
+    }
+}
+.linksContacto{
+    margin-left:1rem;
+}
+.linksContactoW{
+    margin-left: 2.3rem;
+}
+@media only screen and (max-width: 600px){
+    /* de 1400px para abajo se aplicaran los estilos para dispositivos mas pequeños */
+    .linksContacto{
+        margin-left:0rem;
+        
+    }
+    .linksContactoW{
+        margin-left: 0rem;
+    }
+}
+
+/* .logoW{
+    margin-left: 2.2rem;
+} */
+.svgLogos{
+    margin: 1.5rem 1rem 1.5rem 1rem;
+}
+
+
+
+
+
+.footer{
+  
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: .5rem .8rem; 
+    border-bottom: 2px solid  var(--taffy, #041514);
+    border-left: 2px solid  var(--taffy, #041514);
+    border-right: 2px solid  var(--taffy, #041514);
+    margin: 0 .6rem .6rem .6rem;
+}
